@@ -1,3 +1,7 @@
+<?php
+include('home.php');
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,7 +15,7 @@
 <input type="text" name ="user">
 <button> Save</button>
 </form> -->
-    <?php
+   <?php
 // echo "hello world";
 // $usersName = "Manu";
 // echo " $usersName";
@@ -41,6 +45,8 @@ foreach($players as $key => $value){
 //     return $a+$b+$c;
 // }
 // echo printPlayerList(5,7,24);
+
+ displayPageName();
 ?>
 </body>
 </html>
