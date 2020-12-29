@@ -20,7 +20,7 @@
 // $c = $a + $b ;
 // echo "$c";
 
-$name = $_GET['user'];
+//$name = $_GET['user'];
 
 // echo  $name. ' Can play cricket'; 
 
@@ -33,7 +33,14 @@ $amountA = 10;
 $amountB = 20;
 echo $amountA > $amountB;
 
-
+$players = ['roger','mike','andrew','steve','mark'];
+foreach($players as $key => $value){
+    echo $value.'<br>'.'<br>';
+}
+// function printPlayerList ($a,$b,$c = 0){
+//     return $a+$b+$c;
+// }
+// echo printPlayerList(5,7,24);
 ?>
 </body>
 </html>
