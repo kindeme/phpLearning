@@ -1,53 +1,25 @@
 <?php
-include('home.php');
+	include('functions/functions.php');
+	//include_once('functions/functions.php');
+	//require('functions/functions1.php');
+	//require_once('functions/functions.php');
 ?>
-
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+	<title></title>
 </head>
-
 <body>
-<!-- <form method="get">
-<input type="text" name ="user">
-<button> Save</button>
-</form> -->
-   <?php
-// echo "hello world";
-// $usersName = "Manu";
-// echo " $usersName";
-// $a = 10;
-// $b = 15;
-// $c = $a + $b ;
-// echo "$c";
+	<?php
+		include('includes/header.php');
+	?>
 
-//$name = $_GET['user'];
 
-// echo  $name. ' Can play cricket'; 
+	<h1>Fome Page</h1>
 
-$array =['Senyo','Flore','Hillary','Tiffany','Ryan'];
-//echo $array;
-// print_r($array);
-// echo "<br>";
-// print_r(array_flip($array)) ;
-$amountA = 10;
-$amountB = 20;
-echo $amountA > $amountB;
 
-$players = ['roger','mike','andrew','steve','mark'];
-foreach($players as $key => $value){
-    echo $value.'<br>'.'<br>';
-}
-// function printPlayerList ($a,$b,$c = 0){
-//     return $a+$b+$c;
-// }
-// echo printPlayerList(5,7,24);
-
- displayPageName();
-?>
+	<?php
+		include('includes/footer.php');
+	?>
 </body>
 </html>
-
