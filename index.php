@@ -21,5 +21,11 @@
 	<?php
 		include('includes/footer.php');
 	?>
+	<?php 
+	$_SESSION['user_name'] = 'Tom';
+	$_SESSION['age'] = 29;
+	echo"<br>";
+	echo $_SESSION['user_name'] ." is ".$_SESSION['age']."years old";
+	?>
 </body>
 </html>
