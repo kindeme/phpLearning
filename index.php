@@ -1,4 +1,5 @@
 <?php
+	include('db/db.php');
 	include('functions/functions.php');
 	//include_once('functions/functions.php');
 	//require('functions/functions1.php');
