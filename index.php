@@ -13,6 +13,7 @@
 <body>
 	<?php
 		include('includes/header.php');
+
 	?>
 
 
@@ -20,13 +21,21 @@
 
 
 	<?php
-		include('includes/footer.php');
+	
+
+		// show data from database on a website
+		$sql="SELECT * FROM posts";
+		$results = mysqli_query($connection,$sql);
+		if($results){
+			if(mysqli_num_rows($results)){
+				while($row =mysqli_fetch_array($results)){
+					echo "Post title :".$row['title']."<br>";
+					echo "Post content :".$row['comtent']."<br>";
+				}
+			}
+
+		}
 	?>
-	<?php 
-	$_SESSION['user_name'] = 'Tom';
-	$_SESSION['age'] = 29;
-	echo"<br>";
-	echo $_SESSION['user_name'] ." is ".$_SESSION['age']."years old";
-	?>
+
 </body>
 </html>
